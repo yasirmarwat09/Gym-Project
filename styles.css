@@ -531,13 +531,6 @@ footer {
 
 @media (max-width: 1060px) {
 
-    .navigation{
-    height: 65px;
-    padding-right: 7px;
-    padding-left: 7px;
-
-}
-
     /* navigation responsiveness */
     .menu-button {
         width: 50px;
