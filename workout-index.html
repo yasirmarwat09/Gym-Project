@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <!-- Placeholder for header -->
+
+    <main>
+      <div class="header-text">Daily Workout</div>
+      <div class="header-image">
+        <img
+          style="width: 100%; height: 400px"
+          src="./assests/workout/hero-img.jpg"
+          alt="hero-img"
+        />
+      </div>
+      <h1 class="heading-one">Looking For Workout?</h1>
+      <hr />
+
+      <div class="workout-section-container">
+        <a href="./workout-category/chest-workout.html" class="grid-item"
+          >Chest</a
+        >
+        <a href="./workout-category/back-workout.html" class="grid-item"
+          >Back</a
+        >
+        <a href="./workout-category/bicep-workout.html" class="grid-item"
+          >Bicep</a
+        >
+        <a href="./workout-category/tricep-workout.html" class="grid-item"
+          >Tricep</a
+        >
+        <a href="./workout-category/shoulder-workout.html" class="grid-item"
+          >Shoulder</a
+        >
+        <a href="./workout-category/forearms-workout.html" class="grid-item"
+          >Forearm</a
+        >
+        <a href="./workout-category/legs-workout.html" class="grid-item"
+          >Legs</a
+        >
+        <a href="./workout-category/abs-workout.html" class="grid-item">Abs</a>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+    <!-- Placeholder for footer -->
+    <script>
+      // Load header
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data))
+        .catch((error) => console.error("Error loading header:", error));
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data))
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
+</html>

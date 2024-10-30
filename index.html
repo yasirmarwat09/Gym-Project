@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gym-project</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="header-text">push your limits</div>
+    <!-- Placeholder for header -->
+    <main>
+      <div class="header-image"></div>
+      <h1 class="heading-one">Ready to get started?</h1>
+      <hr />
+
+      <div class="card equipments-info">
+        <div class="card-content">
+          <h2>Equipments</h2>
+          <p>
+            At GETFIT Health & Fitness, we are dedicated to transforming your
+            fitness aspirations into reality. Our range of fitness equipment is
+            meticulously designed to cater to all your exercise needs, whether
+            you’re a beginner or a seasoned athlete. From treadmills that propel
+            you towards your cardio goals to weightlifting apparatus that build
+            strength, our high-quality products ensure a holistic workout
+            experience. Join us on the path to a healthier lifestyle, backed by
+            the reliability of Structure Health & Fitness.
+          </p>
+        </div>
+        <div class="card-image">
+          <img src="./assests/gp-eqipments.jpg" alt="dumbbell image" />
+        </div>
+      </div>
+      <div class="card-right card community-cares-info">
+        <div class="card-image community-cares gym-info-pics">
+          <img src="./assests/gp-community-care.jpg" alt="community care" />
+        </div>
+        <div class="card-content">
+          <h2>Community Cares</h2>
+          <p>
+            Welcome to our vibrant gym community, where support is the
+            foundation of our fitness journey. Join us to experience a welcoming
+            atmosphere filled with like-minded individuals. Our monthly
+            challenges keep you motivated and striving for your goals, while our
+            online platforms proudly showcase your transformation to inspire
+            others.
+          </p>
+        </div>
+      </div>
+
+      <div class="card personal-training-info">
+        <div class="card-content">
+          <h2>Personal Training At Its Best</h2>
+          <p>
+            Our personalized training program is designed to help you achieve
+            your fitness goals efficiently. Our expert trainers not only guide
+            you through effective workouts but also provide tailored diet charts
+            to optimize your progress. Attain your fitness potential with our
+            transformative program. Start your journey today.
+          </p>
+        </div>
+        <div class="card-image personal-training">
+          <img
+            src="./assests/gp-personal-training.jpg"
+            alt="personal training"
+          />
+        </div>
+      </div>
+
+      <div class="card-right card amenities-info">
+        <div class="card-image amenities gym-info-pics">
+          <img src="./assests/gp-amenties.png" alt="pool pic" />
+        </div>
+        <div class="card-content">
+          <h2>Our Amenities</h2>
+          <p>
+            Experience a gym like no other with our top-notch amenities. Store
+            your belongings in secure lockers, then unwind in our pool, jacuzzi,
+            and sauna. Treat yourself to a rejuvenating massage at our spa or
+            grab a healthy refreshment at our health bar. Our well-maintained
+            shower facilities ensure you leave feeling refreshed and ready to
+            conquer the day. Discover the perfect balance of fitness and
+            relaxation at Structure Health & Fitness.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <h1 class="heading-one">Locate us!</h1>
+      <p class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.4525200137423!2d71.54422297481236!3d34.006593620140926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917e08997f253%3A0x603dfb98e684b892!2sGarrison%20Recreational%20Center%20(GRC)!5e0!3m2!1sen!2s!4v1729836154801!5m2!1sen!2s"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </p>
+      <br />
+    </main>
+
+    <div id="footer"></div>
+    <!-- Placeholder for footer -->
+    <script>
+      // Load header
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data))
+        .catch((error) => console.error("Error loading header:", error));
+
+      // Load footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data))
+        .catch((error) => console.error("Error loading footer:", error));
+    </script>
+  </body>
+</html>
